@@ -44,7 +44,7 @@ namespace ATH
         }
         else
         {
-            throw runtime_error ("Wrong name input..");
+            throw invalid_argument ("Wrong name input..");
         }
     }
     void Athlete::setSurname(string inputSurname)
@@ -55,7 +55,7 @@ namespace ATH
         }
         else
         {
-            throw runtime_error ("Wrong surname input..");
+            throw invalid_argument ("Wrong surname input..");
         }
     }
     void Athlete::setSport(string inputSport)
@@ -66,7 +66,7 @@ namespace ATH
         }
         else
         {
-            throw runtime_error ("Wrong shoes input..");
+            throw invalid_argument ("Wrong shoes input..");
         }
     }
     void Athlete::setHeight(unsigned int inputHeight)

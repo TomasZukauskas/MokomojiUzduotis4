@@ -70,13 +70,9 @@ int main()
         return 0;
     }
     catch (invalid_argument &error)
-        {
-            cerr << "Error while trying to input athlete: " << error.what() << endl;
-        }
-    catch (runtime_error &error)
-        {
-            cerr << "Error while trying to input athlete: " << error.what() << endl;
-        }
+    {
+        cerr << "Error while trying to input athlete: " << error.what() << endl;
+    }
     catch(...)                  //In order to handle the error
     {
         cerr << "Unknown exeption occured.";
